@@ -29,9 +29,7 @@
     <attack name="skills" interval="2000" chance="10" target="0" shielding="-20">
 	<attribute key="areaEffect" value="redspark"/>
     </attack>
-   <attack name="drunk" interval="2000" chance="10" radius="3" target="0>
-	<attribute key="areaEffect" value="redspark"/>
-    </attack>
+   <attack name="drunk" interval="2000" chance="10" radius="3" target="0/>
 </attacks>
   <defenses armor="55" defense="55">    
   <defense name="healing" interval="1500" chance="10" min="395" max="480">
