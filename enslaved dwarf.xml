@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Enslaved Dwarf" nameDescription="an enslaved dwarf" race="blood" experience="2700" speed="275" manacost="0">
+  <health now="3800" max="3800"/>
+  <look type="494" corpse="13963"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="90" defense="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="61" attack="56" min="-200" max="500"/>
+    <attack name="physical" interval="2000" chance="18" range="7" target="1" min="-170" max="-350">
+  <attribute key="shootEffect" value="largerock"/>
+    </attack>
+    <attack name="physical" interval="2000" chance="18" range="7" radius="3" target="1" min="-125" max="-250">
+	<attribute key="shootEffect" value="fire"/>
+	<attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="skills" interval="2000" chance="10" target="0" shielding="-20">
+	<attribute key="areaEffect" value="redspark"/>
+    </attack>
+   <attack name="drunk" interval="2000" chance="10" radius="3" target="0>
+	<attribute key="areaEffect" value="yellowspark"/>
+    </attack>
+</attacks>
+  <defenses armor="55" defense="55">    
+  <defense name="healing" interval="1500" chance="10" min="395" max="480">
+	<attribute key="areaEffect" value="yellowspark"/>
+  </defense>
+</defenses>
+        <elements>        
+                <element earthPercent="20"/>       
+                <element energyPercent="10"/>          
+                <element icePercent="5"/>   
+                <element deathPercent="5"/>          
+        </elements>
+  <immunities>
+    <immunity fire="1"/>    
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Bark!"/>
+    <voice sentence="Blood!"/>
+  </voices>
+  <loot>
+    <item id="2152" countmax="6" chance="100000" /><!-- platinum coin -->
+    <item id="2148" countmin="9" countmax="100" chance="100000" /><!-- gold coin -->
+    <item id="2148" countmax="49" chance="100000" /><!-- gold coin -->
+    <item id="2789" countmax="2" chance="16330" /><!-- brown mushroom -->
+    <item id="5880" chance="12590" /><!-- iron ore -->
+    <item id="2148" countmax="2" chance="10880" /><!-- small emerald -->
+    <item id="2150" countmax="2" chance="10540" /><!-- small amethyst -->
+    <item id="1988" chance="100000"><!-- backpack -->
+	<inside>
+	<item id="7590" chance="7480" /><!-- great mana potion -->
+	<item id="7591" chance="6460" /><!-- great health potion -->
+	<item id="18417" countmax="2" chance="5440" /><!-- brown crystal splinter -->
+	<item id="2391" chance="5440" /><!-- war hammer -->
+	<item id="18420" chance="4760" /><!-- red crystal fragment -->
+	<item id="11227" chance="4760" /><!-- shiny stone -->
+	<item id="18436" countmax="5" chance="3400" /><!-- drill bolt -->
+	<item id="18416" chance="3060" /><!-- green crystal splinter -->
+	<item id="2515" chance="3060" /><!-- guardian shield -->
+	<item id="2532" chance="2720" /><!-- ancient shield -->
+	<item id="7454" chance="1700" /><!-- glorious axe -->
+	<item id="18415" chance="1360" /><!-- green crystal shard -->
+	<item id="2208" chance="1360" /><!-- axe ring -->
+	<item id="13757" chance="1020" /><!-- coal -->
+	<item id="2475" chance="1020" /><!-- warrior helmet -->
+	<item id="7413" chance="340" /><!-- titan axe -->
+	</inside></item>
+</loot>
+</monster>
